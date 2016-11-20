@@ -2,7 +2,7 @@
 #include <pebble.h>
 #include "composition.h"
 #include "def.h"
-#include "v.h"
+#include "pebble-v/v.h"
 
 static V message_handlers;
 
@@ -43,9 +43,6 @@ static void inbox_received_handler(DictionaryIterator *iterator, void *context)
 
 void composition_init()
 {
-  APP_LOG(APP_LOG_LEVEL_INFO, "composition_init() 01");
-  v_testsuite();
-  APP_LOG(APP_LOG_LEVEL_INFO, "composition_init() 02");
   v_init(&message_handlers, sizeof(MessageHandler));
 
   app_message_register_inbox_received(inbox_received_handler);

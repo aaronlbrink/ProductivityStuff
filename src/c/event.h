@@ -1,6 +1,6 @@
 #pragma once
 
-#include "v.h"
+#include "pebble-v/v.h"
 
 typedef uint8_t EventKey;
 

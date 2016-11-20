@@ -5,7 +5,7 @@
 #include "question.h"
 #include "storage_keys.h"
 #include "strdup.h"
-#include "v.h"
+#include "pebble-v/v.h"
 
 typedef struct {
   char *label;
