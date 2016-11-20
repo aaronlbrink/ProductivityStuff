@@ -138,7 +138,7 @@ V event_get_launches() {
 }
 
 void event_destroy_launches(V *launches) {
-  for (int i = 0; i < launches->count; i++) {
+  for (int i = 0; i < v_count(launches); i++) {
     Event *e = v_get(launches, i);
     event_destroy(e);
   }

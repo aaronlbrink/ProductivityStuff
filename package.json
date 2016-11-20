@@ -2,7 +2,7 @@
     "author": "aaron@brinkdatabase.com",
     "dependencies": {
         "bluebird": "~3",
-        "pebble-v": "^2.0.0",
+        "pebble-v": "^3.0.0",
         "url": "~0"
     },
     "keywords": [],
