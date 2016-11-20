@@ -124,7 +124,7 @@ void event_init()
   // Rely on static initialization if the key doesn’t exist ^^.
   persist_read_data(STORAGE_KEY_EVENT, &info, sizeof(info));
 
-  composition_app_message_register_handler(MESSAGE_KEY_EVENT, inbox_received_handler, NULL);
+  composition_app_message_register_handler(MESSAGE_KEY_EVENT, 512, 512, inbox_received_handler, NULL);
 }
 
 void event_deinit()
